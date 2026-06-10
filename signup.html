@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | NexGen Electronics</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-split">
+        <!-- Left Side: Branding/Image -->
+        <div class="auth-split-left"
+            style="background-image: url('file:///C:/Users/R%20Harish/.gemini/antigravity-ide/brain/c568c726-3d5c-4287-bbd8-9553e764aa75/electronics_hero_bg_1780980336880.png');">
+            <div class="auth-split-overlay"></div>
+            <div class="auth-split-content">
+                <a href="index.html" class="logo"
+                    style="display: flex; align-items: center; justify-content: center; margin-bottom: 40px;">
+                    <img src="images/logo.webp" alt="NexGen Logo" style="height: 48px; width: auto;">
+                </a>
+                <h1 class="dash-anim">Join the Network</h1>
+                <p class="dash-anim" style="animation-delay: 0.1s;">Register your operator node to connect and start monitoring manufacturing solutions across the network.</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Signup Form -->
+        <div class="auth-split-right">
+            <div class="auth-form-wrapper dash-anim" style="animation-delay: 0.2s;">
+                <h2 style="color: var(--clr-secondary); margin-bottom: 30px; text-align: center;">Register Node</h2>
+
+                <form id="signupForm" action="login.html" method="GET">
+                    
+                    <div class="form-group">
+                        <label for="name">Operator Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="e.g. Alexis Carter" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">System Role</label>
+                        <select id="role" class="form-control" required style="appearance: auto;">
+                            <option value="" disabled selected hidden>Select Role...</option>
+                            <option value="user">User / Consumer Node</option>
+                            <option value="admin">Admin / Grid Operator</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Operational Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="yourname@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Establish Security Key</label>
+                        <input type="password" id="password" class="form-control" placeholder="••••••••••••" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-glow" style="width: 100%; margin-top: 10px;">Establish Connection</button>
+                </form>
+
+                <div style="margin-top: 30px; text-align: center; color: var(--clr-text); font-size: 0.9rem;">
+                    Already have an account? <a href="login.html"
+                        style="color: var(--clr-primary-dark); font-weight: 500;">Log in</a>
+                </div>
+
+                <div style="margin-top: 20px; text-align: center;">
+                    <a href="index.html"
+                        style="font-size: 0.85rem; color: var(--clr-text); display: inline-flex; align-items: center; gap: 4px;"><i
+                            class="ph ph-arrow-left"></i> Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+
+</html>

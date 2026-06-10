@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Electronics | Advanced Manufacturing</title>
+    <meta name="description" content="State-of-the-art electronics manufacturing, PCB assembly, and prototyping services.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span class="info-item"><i class="ph ph-envelope-simple"></i> contact@nexgen.io</span>
+                <span class="info-item"><i class="ph ph-phone"></i> +1 (800) 123-4567</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="info-item"><i class="ph ph-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                <img src="images/logo.webp" alt="NexGen Logo" style="height: 36px; width: auto;">
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#stats" class="nav-link">Capabilities</a></li>
+                    <li><a href="#contact" class="nav-link">Get a Quote</a></li>
+                </ul>
+            </nav>
+
+            <a href="signup.html" class="btn btn-primary btn-glow nav-cta">Signup</a>
+            
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- We will use inline style for background image to easily point to the generated image if needed, or put it in CSS -->
+        <div class="hero-bg" style="background-image: url('file:///C:/Users/R%20Harish/.gemini/antigravity-ide/brain/c568c726-3d5c-4287-bbd8-9553e764aa75/electronics_hero_bg_1780980336880.png');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <span class="badge fade-in-up">Industry 4.0 Ready</span>
+            <h1 class="hero-title fade-in-up delay-1">Precision Electronics <br> Manufacturing</h1>
+            <p class="hero-desc fade-in-up delay-2">We deliver state-of-the-art PCB assembly, prototyping, and microelectronics solutions with unparalleled accuracy and speed.</p>
+            <div class="hero-actions fade-in-up delay-3">
+                <a href="#services" class="btn btn-primary btn-glow">Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper reveal-left">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Advanced Circuit Board">
+                </div>
+                <div class="experience-badge">
+                    <span class="exp-number">25</span>
+                    <span class="exp-text">Years of<br>Innovation</span>
+                </div>
+            </div>
+            
+            <div class="about-content reveal-right">
+                <h4 class="section-subtitle">About NexGen</h4>
+                <h2 class="section-title">Driving the Future of Electronics</h2>
+                <p class="section-text">
+                    NexGen is a premier global provider of advanced electronics manufacturing services (EMS). We specialize in complex, high-reliability applications for aerospace, medical, and industrial sectors.
+                </p>
+                <p class="section-text">
+                    Our facilities are equipped with the latest surface-mount technology (SMT) lines, automated optical inspection (AOI), and cleanrooms, ensuring every component meets rigorous quality standards.
+                </p>
+                <ul class="feature-list">
+                    <li><i class="ph-fill ph-check-circle"></i> ISO 9001 & 13485 Certified Facilities</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Rapid Prototyping Turnaround</li>
+                    <li><i class="ph-fill ph-check-circle"></i> Full Turnkey Box Build Assembly</li>
+                </ul>
+                <a href="#" class="btn btn-outline mt-4">Discover More <i class="ph ph-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section bg-dark" id="services">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">Our Expertise</h4>
+                <h2 class="section-title text-white">Comprehensive Solutions</h2>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal-up delay-1">
+                    <div class="service-icon">
+                        <i class="ph ph-circuitry"></i>
+                    </div>
+                    <h3 class="service-title">PCB Assembly</h3>
+                    <p class="service-desc">High-density interconnects, multi-layer rigid and flex PCBs. State-of-the-art SMT and through-hole placement.</p>
+                    <a href="#" class="service-link">Read More <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal-up delay-2">
+                    <div class="service-icon">
+                        <i class="ph ph-cpu"></i>
+                    </div>
+                    <h3 class="service-title">Microelectronics</h3>
+                    <p class="service-desc">Precision die attach, wire bonding, and encapsulation performed in Class 10,000 cleanrooms.</p>
+                    <a href="#" class="service-link">Read More <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal-up delay-3">
+                    <div class="service-icon">
+                        <i class="ph ph-wrench"></i>
+                    </div>
+                    <h3 class="service-title">Rapid Prototyping</h3>
+                    <p class="service-desc">Fast-track NPI (New Product Introduction) services to get your design from concept to physical board in days.</p>
+                    <a href="#" class="service-link">Read More <i class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal-up delay-4">
+                    <div class="service-icon">
+                        <i class="ph ph-shield-check"></i>
+                    </div>
+                    <h3 class="service-title">Testing & QA</h3>
+                    <p class="service-desc">In-circuit testing (ICT), flying probe, automated optical inspection (AOI), and X-ray analysis.</p>
+                    <a href="#" class="service-link">Read More <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal-up delay-1">
+                    <i class="ph ph-microchip stat-icon"></i>
+                    <h3 class="stat-number" data-target="150">0</h3>
+                    <span class="stat-suffix">M+</span>
+                    <p class="stat-text">Components Assembled</p>
+                </div>
+                
+                <div class="stat-item reveal-up delay-2">
+                    <i class="ph ph-buildings stat-icon"></i>
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <span class="stat-suffix"></span>
+                    <p class="stat-text">Global Facilities</p>
+                </div>
+                
+                <div class="stat-item reveal-up delay-3">
+                    <i class="ph ph-users stat-icon"></i>
+                    <h3 class="stat-number" data-target="450">0</h3>
+                    <span class="stat-suffix">+</span>
+                    <p class="stat-text">Expert Engineers</p>
+                </div>
+                
+                <div class="stat-item reveal-up delay-4">
+                    <i class="ph ph-target stat-icon"></i>
+                    <h3 class="stat-number" data-target="99">0</h3>
+                    <span class="stat-suffix">.9%</span>
+                    <p class="stat-text">Yield Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner">
+        <div class="container cta-inner reveal-up">
+            <div class="cta-content">
+                <h2>Ready to scale your production?</h2>
+                <p>Partner with NexGen to bring your electronic innovations to market faster.</p>
+            </div>
+            <div class="cta-action">
+                <a href="#contact" class="btn btn-primary btn-glow">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <a href="index.html" class="logo footer-logo" style="display: flex; align-items: center;">
+                        <img src="images/logo.webp" alt="NexGen Logo" style="height: 36px; width: auto;">
+                    </a>
+                    <p class="footer-text">
+                        Leading the industry in precision electronics manufacturing, providing end-to-end solutions from prototyping to mass production.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">PCB Assembly</a></li>
+                        <li><a href="#">Box Build Assembly</a></li>
+                        <li><a href="#">Microelectronics</a></li>
+                        <li><a href="#">Testing & Inspection</a></li>
+                        <li><a href="#">Supply Chain Management</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Media</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="login.html">Client Portal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-text">Subscribe to our newsletter for the latest industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="ph ph-paper-plane-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexGen Electronics. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
