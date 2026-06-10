@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | NexGen Electronics</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                    <img src="images/logo.webp" alt="NexGen Logo" style="height: 32px; width: auto;">
+                </a>
+            </div>
+            
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html"><i class="ph ph-squares-four"></i> Overview</a></li>
+                <li><a href="projects.html"><i class="ph ph-circuitry"></i> My Projects</a></li>
+                <li><a href="quotations.html"><i class="ph ph-file-text"></i> Quotations</a></li>
+                <li><a href="analytics.html"><i class="ph ph-chart-line-up"></i> Analytics</a></li>
+                <li><a href="messages.html" class="active"><i class="ph ph-envelope"></i> Messages <span style="background: var(--clr-primary); color: var(--clr-secondary); padding: 2px 6px; border-radius: 10px; font-size: 0.75rem; margin-left: auto;">3</span></a></li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <ul class="sidebar-nav" style="padding: 0;">
+                    <li><a href="settings.html"><i class="ph ph-gear"></i> Settings</a></li>
+                    <li><a href="index.html"><i class="ph ph-sign-out"></i> Logout</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <header class="dash-header">
+                <div>
+                    <!-- Mobile toggle placeholder -->
+                </div>
+                <div class="dash-user">
+                    <i class="ph ph-bell" style="font-size: 1.25rem; margin-right: 16px; cursor: pointer;"></i>
+                    <img src="https://ui-avatars.com/api/?name=User&background=0A192F&color=00D2FF" alt="User Avatar">
+                    <span id="user-email-display">Loading...</span>
+                </div>
+            </header>
+            
+            <div class="dash-content">
+                <h1 class="dash-title dash-anim">Messages</h1>
+                
+                <div class="dash-anim" style="display: flex; height: calc(100vh - 220px); background: var(--clr-white); border: 1px solid #eaeaea; border-radius: 8px; box-shadow: var(--shadow-sm); animation-delay: 0.1s; overflow: hidden; margin-top: 20px; min-height: 400px;">
+                    <!-- Message List -->
+                    <div style="width: 350px; border-right: 1px solid #eaeaea; display: flex; flex-direction: column;">
+                        <div style="padding: 16px; border-bottom: 1px solid #eaeaea;">
+                            <input type="text" placeholder="Search messages..." style="width: 100%; padding: 10px; border: 1px solid #eaeaea; border-radius: 6px; outline: none; font-family: var(--font-body);">
+                        </div>
+                        <div style="flex: 1; overflow-y: auto;">
+                            <!-- Chat Item 1 -->
+                            <div style="padding: 16px; border-bottom: 1px solid #eaeaea; cursor: pointer; background: rgba(0, 210, 255, 0.05); border-left: 3px solid var(--clr-primary);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span style="font-weight: 600; color: var(--clr-secondary); font-size: 0.95rem;">Engineering Team</span>
+                                    <span style="font-size: 0.75rem; color: var(--clr-primary-dark); font-weight: 600;">10:42 AM</span>
+                                </div>
+                                <div style="font-size: 0.85rem; color: var(--clr-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500;">
+                                    RE: DFM Review for PRJ-8842 - Found pad size issue...
+                                </div>
+                            </div>
+                            <!-- Chat Item 2 -->
+                            <div style="padding: 16px; border-bottom: 1px solid #eaeaea; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='transparent'">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span style="font-weight: 600; color: var(--clr-secondary); font-size: 0.95rem;">Procurement Dept</span>
+                                    <span style="font-size: 0.75rem; color: var(--clr-text);">Yesterday</span>
+                                </div>
+                                <div style="font-size: 0.85rem; color: var(--clr-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                    BOM shortage: STM32F405RGT6 lead time extended...
+                                </div>
+                            </div>
+                            <!-- Chat Item 3 -->
+                            <div style="padding: 16px; border-bottom: 1px solid #eaeaea; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='transparent'">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                                    <span style="font-weight: 600; color: var(--clr-secondary); font-size: 0.95rem;">Account Manager</span>
+                                    <span style="font-size: 0.75rem; color: var(--clr-text);">Oct 24</span>
+                                </div>
+                                <div style="font-size: 0.85rem; color: var(--clr-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                    Your quotation QT-2026-074 is ready for approval.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Message View -->
+                    <div style="flex: 1; display: flex; flex-direction: column;">
+                        <div style="padding: 16px 24px; border-bottom: 1px solid #eaeaea; display: flex; align-items: center; justify-content: space-between; background: #fafafa;">
+                            <div>
+                                <h3 style="font-size: 1.1rem; color: var(--clr-secondary); margin-bottom: 4px;">Engineering Team</h3>
+                                <div style="font-size: 0.8rem; color: var(--clr-text);">Project: NXP-V4 Motherboard (PRJ-8842)</div>
+                            </div>
+                            <div style="display: flex; gap: 12px;">
+                                <i class="ph ph-phone" style="font-size: 1.2rem; color: var(--clr-text); cursor: pointer;"></i>
+                                <i class="ph ph-video-camera" style="font-size: 1.2rem; color: var(--clr-text); cursor: pointer;"></i>
+                                <i class="ph ph-dots-three" style="font-size: 1.2rem; color: var(--clr-text); cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div style="flex: 1; padding: 24px; overflow-y: auto; background: #fdfdfd;">
+                            <!-- Message Bubble 1 -->
+                            <div style="display: flex; gap: 16px; margin-bottom: 24px;">
+                                <div style="width: 40px; height: 40px; background: #1e90ff; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; flex-shrink: 0;">ET</div>
+                                <div>
+                                    <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px;">
+                                        <span style="font-weight: 600; color: var(--clr-secondary);">Engineering Team</span>
+                                        <span style="font-size: 0.75rem; color: var(--clr-text);">10:42 AM</span>
+                                    </div>
+                                    <div style="background: var(--clr-white); border: 1px solid #eaeaea; padding: 16px; border-radius: 0 8px 8px 8px; font-size: 0.9rem; color: var(--clr-text); line-height: 1.5; max-width: 600px;">
+                                        Hi there,<br><br>We are running the Design for Manufacturing (DFM) checks on the Gerber files you uploaded yesterday. We noticed that the pad sizes for U12 (QFN-48) are slightly smaller than the manufacturer's recommended IPC footprint, which might cause solder bridging during reflow.<br><br>Can you please review the attached PDF report and advise if we should proceed with slight modifications on our end, or if you will provide an updated Gerber?<br><br>
+                                        <div style="margin-top: 12px; display: flex; align-items: center; gap: 8px; border: 1px solid #eaeaea; padding: 8px; border-radius: 6px; width: fit-content; background: #fafafa; cursor: pointer;">
+                                            <i class="ph ph-file-pdf" style="color: #ff4757; font-size: 1.2rem;"></i>
+                                            <span style="font-weight: 500;">DFM_Report_PRJ8842.pdf</span>
+                                            <i class="ph ph-download-simple" style="margin-left: 12px; color: var(--clr-text);"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding: 16px; border-top: 1px solid #eaeaea; background: var(--clr-white); display: flex; gap: 12px; align-items: center;">
+                            <i class="ph ph-paperclip" style="font-size: 1.4rem; color: var(--clr-text); cursor: pointer;"></i>
+                            <input type="text" placeholder="Type your reply..." style="flex: 1; padding: 12px; border: 1px solid #eaeaea; border-radius: 20px; outline: none; font-family: var(--font-body); font-size: 0.9rem;">
+                            <button style="background: var(--clr-primary); color: var(--clr-secondary); border: none; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;"><i class="ph ph-paper-plane-right" style="font-size: 1.2rem;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userEmail = localStorage.getItem('loggedInUser');
+            if (userEmail) {
+                document.getElementById('user-email-display').textContent = userEmail;
+                const namePart = userEmail.split('@')[0];
+                const capitalized = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+                const avatarImg = document.querySelector('.dash-user img');
+                if (avatarImg) {
+                    avatarImg.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(capitalized)}&background=0A192F&color=00D2FF`;
+                }
+            } else {
+                document.getElementById('user-email-display').textContent = 'Guest User';
+            }
+        });
+    </script>
+</body>
+</html>
